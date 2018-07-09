@@ -1,12 +1,4 @@
 # -*- coding: cp1251 -*-
-from apiclient.discovery import build
-from apiclient.errors import HttpError
-
-from Ovechkin import Database
-
-YOUTUBE_API_SERVICE_NAME = "youtube"
-YOUTUBE_API_VERSION = "v3"
-DEVELOPER_KEY = 'AIzaSyDTHJ5TDpQ_ixajOM9YbuLcv0oXx0wSpi0'
 
 
 class Video():
@@ -73,7 +65,7 @@ class Comments():
             text = comment["snippet"]["textDisplay"]
             self.text.append( text )
             author = comment["snippet"]["authorDisplayName"]
-            self.authors.insert( len( comments.authors ), author )
+            self.authors.insert( len( self.authors ), author )
         print "Total threads: %d" % len( threads )
         return threads
 
@@ -86,37 +78,10 @@ class Comments():
         for item in results["items"]:
             text = item["snippet"]["textDisplay"]
             author = item["snippet"]["authorDisplayName"]
-            self.authors.insert( len( comments.authors ), author )
+            self.authors.insert( len( self.authors ), author )
             self.text.append( text )
             # print text
         return results["items"]
 
 
-video = Video()
-comments = Comments()
 
-if __name__ == "__main__":
-
-    y = build( YOUTUBE_API_SERVICE_NAME, YOUTUBE_API_VERSION, developerKey=DEVELOPER_KEY )
-
-    try:
-        video.youtube_search( y, query="Вашингтон", ChnlId="UCWwCM3cvQjiAecvkph7EyCQ" )
-        for vidId in video.id_list:
-            video_comment_threads = comments.get_threads( y, vidId )
-            for thread in video_comment_threads:
-                comments.get( y, thread["id"] )
-            # break
-        i = 0  # type: int
-
-        ODB = Database( "Ovechkin" )
-
-        ovi_names = [u"Алекс", u"Ови", u"Овечкин", u"Овца", u"Сан", u"Саш", u"великий", u"Великий", u"Барашкин",
-                     u"Капитан", u"Овц"]
-        while (i != len( comments.authors )):
-            ODB.savetodb( comments.authors[i], comments.text[i], ovi_names )
-            # print "qty="+i
-            i += 1
-        ODB.deinit()
-
-    except HttpError, e:
-        print "An HTTP error %d occurred:\n%s" % (e.resp.status, e.content)
