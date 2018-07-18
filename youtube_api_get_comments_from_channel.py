@@ -14,7 +14,7 @@ class Video():
         search_response = youtube.search().list(
             q=q,
             part="id,snippet",
-            maxResults=50,
+            maxResults=100,
             channelId=ChnlId,
             fields='items'
         ).execute()
@@ -40,8 +40,9 @@ class Comments():
             part="snippet",
             videoId=video_id,
             textFormat="plainText",
+            maxResults=100
         ).execute()
-
+        j = 0
         for item in results["items"]:
             threads.append( item )
             comment = item["snippet"]["topLevelComment"]
@@ -57,6 +58,7 @@ class Comments():
                 videoId=video_id,
                 pageToken=results["nextPageToken"],
                 textFormat="plainText",
+                maxResults=100
             ).execute()
         print "--------------"
         for item in results["items"]:
@@ -73,6 +75,7 @@ class Comments():
         results = youtube.comments().list(
             part="snippet",
             parentId=parent_id,
+            maxResults=50,
             textFormat="plainText" ).execute()
         # print parent_id
         for item in results["items"]:

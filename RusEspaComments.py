@@ -20,16 +20,20 @@ if __name__ == "__main__":
     y = build( YOUTUBE_API_SERVICE_NAME, YOUTUBE_API_VERSION, developerKey=DEVELOPER_KEY )
 
     try:
+        j = 0
         video_comment_threads = comments.get_threads( y, "8W7QkEokCz0" )
         for thread in video_comment_threads:
             comments.get( y, thread["id"] )
+            j+=1
+            print j
             # break
-
+        print "-----------------------DB start"
         ODB = Database( "RusEspaComments" )
         i = 0  # type: int
-        ovi_names = [u" "]; #always be in text of comments
+        names = [u" "]; #always be in text of comments
         while (i != len( comments.authors )):
-            ODB.savetodb( comments.authors[i], comments.text[i], ovi_names )
+
+            ODB.savetodb( comments.authors[i], comments.text[i], names )
             # print "qty="+i
             i += 1
         ODB.deinit()
