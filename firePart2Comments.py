@@ -21,14 +21,14 @@ if __name__ == "__main__":
 
     try:
         j = 0
-        video_comment_threads = comments.get_threads( y, "8W7QkEokCz0" )
+        video_comment_threads = comments.get_threads( y, "wqSQl0OOdVw" )
         for thread in video_comment_threads:
             comments.get( y, thread["id"] )
             j+=1
             print j
             # break
         print "-----------DB start------------"
-        ODB = Database( "RusEspaComments" )
+        ODB = Database( "Nik2FirePart2Comments" )
         i = 0  # type: int
         names = [u" "]; #always be in text of comments
         while (i != len( comments.authors )):

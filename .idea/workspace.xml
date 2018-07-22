@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="626b3b0f-6399-408a-8b03-3b5b33ddbf9f" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/firePart2Comments.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database.py" beforeDir="false" afterPath="$PROJECT_DIR$/Database.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RusEspaComments.py" beforeDir="false" afterPath="$PROJECT_DIR$/RusEspaComments.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/youtube_api_get_comments_from_channel.py" beforeDir="false" afterPath="$PROJECT_DIR$/youtube_api_get_comments_from_channel.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,17 +19,29 @@
       <file leaf-file-name="youtube_api_get_comments_from_channel.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/youtube_api_get_comments_from_channel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-141">
-              <caret line="63" column="37" lean-forward="true" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
+            <state relative-caret-position="1071">
+              <caret line="63" column="37" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RusEspaComments.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RusEspaComments.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RusEspaComments.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="32" column="54" lean-forward="true" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
+            <state relative-caret-position="493">
+              <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+              <folding>
+                <element signature="e#26#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="firePart2Comments.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/firePart2Comments.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="34" column="21" lean-forward="true" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
               <folding>
                 <element signature="e#26#36#0" expanded="true" />
               </folding>
@@ -39,8 +52,8 @@
       <file leaf-file-name="Ovechkin_main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Ovechkin_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="26" column="47" lean-forward="true" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+            <state relative-caret-position="357">
+              <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -54,11 +67,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Database.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Database.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Database.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+            <state relative-caret-position="-19">
+              <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+              <folding>
+                <element signature="e#26#40#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,6 +92,7 @@
     <findStrings>
       <find>ovi_names</find>
       <find>uN</find>
+      <find>evich</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -90,6 +107,8 @@
         <option value="$PROJECT_DIR$/Ovechkin_main.py" />
         <option value="$PROJECT_DIR$/youtube_api_get_comments_from_channel.py" />
         <option value="$PROJECT_DIR$/RusEspaComments.py" />
+        <option value="$PROJECT_DIR$/firePart2Comments.py" />
+        <option value="$PROJECT_DIR$/Database.py" />
       </list>
     </option>
   </component>
@@ -125,7 +144,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/RusEspaComments.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/firePart2Comments.py" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -154,7 +173,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RusEspaComments.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/firePart2Comments.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -184,13 +203,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1432" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21083455" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50073206" side_tool="true" weight="0.3210059" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3378788" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3210059" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49926794" visible="true" weight="0.3210059" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32988167" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -233,13 +253,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Создано несколько файлов для решения разных задач.&#10;Ovechkin_main - для поиска по каналу vlad_perlgler всех упоминаний об ОВечкине.&#10;RusEspaComments - сбор комментов из одного конкретного видео." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Python27/Lib/email/message.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6018">
-          <caret line="354" column="23" selection-start-line="354" selection-start-column="17" selection-end-line="354" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/UserDict.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3417">
@@ -558,31 +571,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Ovechkin_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="26" column="47" lean-forward="true" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+        <state relative-caret-position="357">
+          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/youtube_api_get_comments_from_channel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-141">
-          <caret line="63" column="37" lean-forward="true" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Database.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        <state relative-caret-position="1071">
+          <caret line="63" column="37" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RusEspaComments.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="32" column="54" lean-forward="true" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
+        <state relative-caret-position="493">
+          <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
           <folding>
             <element signature="e#26#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firePart2Comments.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="34" column="21" lean-forward="true" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+          <folding>
+            <element signature="e#26#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19">
+          <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+          <folding>
+            <element signature="e#26#40#0" expanded="true" />
           </folding>
         </state>
       </provider>

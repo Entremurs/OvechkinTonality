@@ -21,9 +21,9 @@ class Database:
         self.commentsId = 0
     
     def checkUserId(self, userName):        
-        self.cu.execute("SELECT user_id FROM User WHERE user_name LIKE '" + userName + "'")
+        self.cu.execute("SELECT user_id FROM User WHERE user_name LIKE  (?)", (userName,))
         results = self.cu.fetchall()
-        
+
         if len(results):
             res = list(results[0])
             return 1, res[0]
@@ -48,7 +48,7 @@ class Database:
             flag, res = self.checkUserId(un)
             if(flag):
                 self.cu.execute("INSERT INTO Comments(comments, comments_id, commentsTonality, user_id) VALUES(?, ?, ?, ?)",
-                                (comment, self.commentsId, "NOT", res))
+                                (cmnt, self.commentsId, "NOT", res))
             else:
                 print self.userId
                 self.userId += 1
