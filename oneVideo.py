@@ -22,17 +22,16 @@ if __name__ == "__main__":
     for arg in sys.argv[1:]:
         print "arg = "+arg+"\n"
 
-
     try:
         j = 0
-        video_comment_threads = comments.get_threads( y, "wqSQl0OOdVw" )
+        video_comment_threads = comments.get_threads( y,  sys.argv[1])
         for thread in video_comment_threads:
             comments.get( y, thread["id"] )
             j+=1
             print j
             # break
         print "-----------DB start------------"
-        ODB = Database( "Nik2FirePart2Comments" )
+        ODB = Database( sys.argv[2] )
         i = 0  # type: int
         names = [u" "]; #always be in text of comments
         while (i != len( comments.authors )):
