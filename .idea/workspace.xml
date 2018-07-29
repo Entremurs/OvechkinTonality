@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="626b3b0f-6399-408a-8b03-3b5b33ddbf9f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/oneVideo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChannelWithKeyWord.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firePart2Comments.py" beforeDir="false" afterPath="$PROJECT_DIR$/firePart2Comments.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ovechkin_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ovechkin_main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -57,11 +57,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ovechkin_main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Ovechkin_main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Ovechkin_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+            <state relative-caret-position="110">
+              <caret line="10" column="36" lean-forward="true" selection-end-line="43" />
+              <folding>
+                <element signature="e#26#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChannelWithKeyWord.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ChannelWithKeyWord.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="313">
+              <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
               <folding>
                 <element signature="e#26#36#0" expanded="true" />
               </folding>
@@ -115,17 +127,18 @@
         <option value="C:/Python27/Lib/rfc822.py" />
         <option value="$PROJECT_DIR$/Ovechkin.py" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/Ovechkin_main.py" />
         <option value="$PROJECT_DIR$/youtube_api_get_comments_from_channel.py" />
         <option value="$PROJECT_DIR$/RusEspaComments.py" />
         <option value="$PROJECT_DIR$/Database.py" />
         <option value="$PROJECT_DIR$/firePart2Comments.py" />
         <option value="$PROJECT_DIR$/oneVideo.py" />
+        <option value="$PROJECT_DIR$/Ovechkin_main.py" />
+        <option value="$PROJECT_DIR$/ChannelWithKeyWord.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1432" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="313" />
     <option name="y" value="-8" />
     <option name="width" value="1080" />
     <option name="height" value="646" />
@@ -210,19 +223,25 @@
       <option name="project" value="LOCAL" />
       <updated>1531169029695</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Переходим от частного к общему. Задаём параметры через настройки проекта. OneVideo сбор всех комментариев под одинм видео. Используем sys.argv для передачи в даный скрипт">
+      <created>1532775810699</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1532775810699</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1432" y="-8" width="1382" height="784" extended-state="7" />
-    <editor active="true" />
+    <frame x="1432" y="-8" width="1382" height="784" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21083455" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50073206" side_tool="true" weight="0.3210059" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3378788" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49926794" visible="true" weight="0.3210059" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49926794" weight="0.3210059" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32988167" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -262,16 +281,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Создано несколько файлов для решения разных задач.&#10;Ovechkin_main - для поиска по каналу vlad_perlgler всех упоминаний об ОВечкине.&#10;RusEspaComments - сбор комментов из одного конкретного видео." />
-    <option name="LAST_COMMIT_MESSAGE" value="Создано несколько файлов для решения разных задач.&#10;Ovechkin_main - для поиска по каналу vlad_perlgler всех упоминаний об ОВечкине.&#10;RusEspaComments - сбор комментов из одного конкретного видео." />
+    <MESSAGE value="Переходим от частного к общему. Задаём параметры через настройки проекта. OneVideo сбор всех комментариев под одинм видео. Используем sys.argv для передачи в даный скрипт" />
+    <option name="LAST_COMMIT_MESSAGE" value="Переходим от частного к общему. Задаём параметры через настройки проекта. OneVideo сбор всех комментариев под одинм видео. Используем sys.argv для передачи в даный скрипт" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Python27/Lib/pickle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4420">
-          <caret line="260" column="23" selection-start-line="260" selection-start-column="17" selection-end-line="260" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/threading.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21454">
@@ -620,8 +633,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Ovechkin_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+        <state relative-caret-position="110">
+          <caret line="10" column="36" lean-forward="true" selection-end-line="43" />
+          <folding>
+            <element signature="e#26#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChannelWithKeyWord.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
           <folding>
             <element signature="e#26#36#0" expanded="true" />
           </folding>

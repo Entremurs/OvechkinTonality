@@ -27,7 +27,6 @@ if __name__ == "__main__":
                 comments.get( y, thread["id"] )
             # break
         i = 0  # type: int
-#https://www.youtube.com/watch?v=8W7QkEokCz0
 
         ODB = Database( "Ovechkin" )
 
