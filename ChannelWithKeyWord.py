@@ -6,6 +6,7 @@ from youtube_api_get_comments_from_channel import Video
 from youtube_api_get_comments_from_channel import Comments
 from apiclient.discovery import build
 from apiclient.errors import HttpError
+import config
 
 
 YOUTUBE_API_SERVICE_NAME = "youtube"
@@ -20,7 +21,7 @@ if __name__ == "__main__":
     y = build( YOUTUBE_API_SERVICE_NAME, YOUTUBE_API_VERSION, developerKey=DEVELOPER_KEY )
 
     try:
-        video.youtube_search( y, query="Вашингтон", ChnlId="UCWwCM3cvQjiAecvkph7EyCQ" )
+        video.youtube_search( y, query=config.query, ChnlId=config.channelId )
         for vidId in video.id_list:
             video_comment_threads = comments.get_threads( y, vidId )
             for thread in video_comment_threads:
@@ -28,12 +29,11 @@ if __name__ == "__main__":
             # break
         i = 0  # type: int
 
-        ODB = Database( "Ovechkin" )
+        ODB = Database( config.dbName )
 
-        ovi_names = [u"Алекс", u"Ови", u"Овечкин", u"Овца", u"Сан", u"Саш", u"великий", u"Великий", u"Барашкин",
-                     u"Капитан", u"Овц"]
+
         while (i != len( comments.authors )):
-            ODB.savetodb( comments.authors[i], comments.text[i], ovi_names )
+            ODB.savetodb( comments.authors[i], comments.text[i], config.names )
             # print "qty="+i
             i += 1
         ODB.deinit()

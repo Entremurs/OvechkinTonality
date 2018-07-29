@@ -1,0 +1,7 @@
+# -*- coding: cp1251 -*-
+
+dbName  = u"–асстрел÷ар€ч2"
+
+videolId = "wqSQl0OOdVw"
+
+names = [u" "] #always be in text of comments. All comments include

@@ -10,11 +10,11 @@ class Video():
     def youtube_search(self, youtube, query, ChnlId):
         # Call the search.list method to retrieve results matching the specified
         # query term.
-        q = query.decode( 'cp1251' )
+        #q = query.decode( 'cp1251' )
         search_response = youtube.search().list(
-            q=q,
+            q=query,
             part="id,snippet",
-            maxResults=100,
+            maxResults=50,
             channelId=ChnlId,
             fields='items'
         ).execute()
